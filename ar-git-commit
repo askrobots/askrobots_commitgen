@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -z "$ASKROBOTS_COMMITGEN_PATH" ]; then
+    echo "Error: ASKROBOTS_COMMITGEN_PATH is not set. Please set it to the askrobots_commitgen project directory."
+    exit 1
+fi
+
+python "$ASKROBOTS_COMMITGEN_PATH/main.py" "$@"
+
