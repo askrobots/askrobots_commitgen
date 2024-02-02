@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Assuming ASKROBOTS_COMMITGEN_PATH is set to the directory containing your Python scripts
+if [ -z "$ASKROBOTS_COMMITGEN_PATH" ]; then
+    echo "Error: ASKROBOTS_COMMITGEN_PATH is not set. Please set it to the askrobots_commitgen project directory."
+    exit 1
+fi
+
+python "$ASKROBOTS_COMMITGEN_PATH/ai_modify.py" "$@"
