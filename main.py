@@ -1,5 +1,5 @@
-from git_helper import get_git_diff
-from commit_generator import generate_commit_message
+from git_operations import get_git_diff
+from ai_commit import generate_commit_message
 
 def main():
     diff = get_git_diff()
