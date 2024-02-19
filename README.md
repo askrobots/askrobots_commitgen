@@ -35,6 +35,12 @@ Set up your OpenAI API key in an environment variable:
 export OPENAI_API_KEY='your-api-key'
 ```
 
+Option alias in .zshrc to give a shortcut for running instead of "python path-to-commitgen/main.py" you run "commitgen" 
+
+```bash
+alias commitgen='python ~/IdeaProjects/askrobots_commitgen/main.py'
+```
+
 ## Usage
 Run the script in your git repository:
 
